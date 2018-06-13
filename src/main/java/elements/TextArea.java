@@ -1,7 +1,18 @@
 package elements;
 
 public class TextArea extends TextComponent {
-    public TextArea(String name, int width, int height) {
-        super(name, width, height);
+
+    public String nameTextArea;
+
+    public TextArea(String name, String fieldContent, int width, int height){
+        super (name, fieldContent, width, height);
+        this.name = nameTextArea;
+
     }
+
+    @Override
+    public void textPrint(){
+        System.out.print("Print" + fieldContent);
+    }
+
 }

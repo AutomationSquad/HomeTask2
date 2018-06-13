@@ -14,7 +14,7 @@ public class Component {
     }
 
     public void selectComponent () {
-        System.out.println(name+"selected");
+        System.out.println(name + "selected");
     }
 
 }
