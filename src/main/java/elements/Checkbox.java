@@ -1,7 +1,17 @@
 package elements;
 
-public class Checkbox extends Component {
-    public Checkbox(String name, int width, int height) {
-        super(name, width, height);
+public class Checkbox extends CheckboxGroup {
+    public String checboxName;
+
+    public Checkbox(String checboxName, boolean status)
+    {
+        super(status);
+        this.name = checboxName;
+
+    }
+
+    @Override
+    public void statusCheckbox () {
+        System.out.print(checboxName + "is" + status);
     }
 }
