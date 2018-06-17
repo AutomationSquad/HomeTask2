@@ -1,4 +1,4 @@
-package interfaces;
+package elements;
 
 public interface IDraggable {
 
