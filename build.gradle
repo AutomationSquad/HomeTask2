@@ -1,7 +1,9 @@
-group 'HomeTask2'
-version '1.0-SNAPSHOT'
+plugins {
+    id 'java'
+}
 
-apply plugin: 'java'
+group 'Draft'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
