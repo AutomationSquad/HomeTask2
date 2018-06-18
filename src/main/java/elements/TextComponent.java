@@ -1,6 +1,9 @@
 package elements;
 
-public class TextComponent extends Component {
+import interfaces.ISelectable;
+import interfaces.IVisible;
+
+public class TextComponent extends Component implements ISelectable, IVisible {
 
     protected int size;
     protected String name;
@@ -14,4 +17,13 @@ public class TextComponent extends Component {
         System.out.println("Display input text.");
     }
 
+    @Override
+    public void select() {
+        System.out.println(name + " is selected.");
+    }
+
+    @Override
+    public boolean isDisplayed() {
+        return true;
+    }
 }

@@ -1,6 +1,8 @@
 package elements;
 
-public class Container extends Component {
+import interfaces.IDrageble;
+
+public class Container extends Component implements IDrageble {
 
     protected int elementsInside;
     public Container(String name, int elementsInside){
@@ -21,4 +23,8 @@ public class Container extends Component {
         System.out.println(name + " contains " + elementsInside + " elements inside");
     }
 
+    @Override
+    public void drag() {
+        this.highlightComponent();
+    }
 }

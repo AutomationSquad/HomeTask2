@@ -1,5 +1,11 @@
 package elements;
 
+import interfaces.IClickable;
+import interfaces.IVisible;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class RunElements {
 
     public static void main(String[] args) {
@@ -27,11 +33,33 @@ public class RunElements {
         Button closeButton = new Button("Close button", "z,y", true, "red");
         Button expandButton = new Button("Expand button", "x,x",false, "gray");
         Button collapseButton = new Button("Collapse button", "x,z",false, "gray");
+        applet.name = "Applet 123";
 
         Window window = new Window("Awesome window", closeButton,collapseButton,expandButton);
         window.highlightComponent();
         window.storeElements(10);
         window.collapse(collapseButton);
         window.expand(expandButton);
+
+        System.out.println("Interfaces go here");
+
+        List<IClickable> clickables = new ArrayList();
+        clickables.add(applet);
+        clickables.add(checkbox);
+        clickables.add(button);
+
+        for (IClickable clickable : clickables) {
+           clickable.click();
+        }
+
+        List<IVisible> visibles = new ArrayList();
+        visibles.add(label);
+        visibles.add(button);
+        visibles.add(panel);
+
+        for (IVisible visible : visibles) {
+            System.out.println(visible.isDisplayed());
+        }
+
     }
 }

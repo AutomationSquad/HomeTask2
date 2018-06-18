@@ -1,6 +1,9 @@
 package elements;
 
-public class Button  extends Component{
+import interfaces.IClickable;
+import interfaces.IVisible;
+
+public class Button  extends Component implements IClickable, IVisible{
     protected String name;
     protected String position;
     protected boolean status;
@@ -24,4 +27,13 @@ public class Button  extends Component{
         System.out.println(name + " was  clicked");
     }
 
+    @Override
+    public void click() {
+        this.clickOnButton();
+    }
+
+    @Override
+    public boolean isDisplayed() {
+        return true;
+    }
 }

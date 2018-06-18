@@ -1,6 +1,8 @@
 package elements;
 
-public class Checkbox extends CheckboxGroup{
+import interfaces.IClickable;
+
+public class Checkbox extends CheckboxGroup implements IClickable {
 
     public Checkbox(String name, String position, boolean status) {
         super(name, position, status);
@@ -11,5 +13,10 @@ public class Checkbox extends CheckboxGroup{
         System.out.println(name + " was clicked.");
         System.out.println(name + "`s" + " status is " + status);
         System.out.println(name + "`s" + " position is " + position);
+    }
+
+    @Override
+    public void click() {
+        this.clickOnCheckbox();
     }
 }

@@ -1,6 +1,10 @@
 package elements;
 
-public class Window extends Container {
+import interfaces.IClosable;
+import interfaces.IDrageble;
+import interfaces.IVisible;
+
+public class Window extends Container implements IDrageble, IVisible, IClosable{
 
     private Button closeButton;
     private Button collapseButton;
@@ -29,5 +33,20 @@ public class Window extends Container {
     public void expand(Button expandButton){
         expandButton.clickOnButton();
         System.out.println(name + " is expanded.");
+    }
+
+    @Override
+    public void close() {
+        this.closeButton.clickOnButton();
+    }
+
+    @Override
+    public void drag() {
+        System.out.println("Drag the window!");
+    }
+
+    @Override
+    public boolean isDisplayed() {
+        return true;
     }
 }

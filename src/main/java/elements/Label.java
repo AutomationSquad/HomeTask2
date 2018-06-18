@@ -1,6 +1,8 @@
 package elements;
 
-public class Label extends Component {
+import interfaces.IVisible;
+
+public class Label extends Component implements IVisible{
 
     String textToBeDisplayed;
 
@@ -18,5 +20,10 @@ public class Label extends Component {
         System.out.println(name + "`s" + " position is " + position);
 
 
+    }
+
+    @Override
+    public boolean isDisplayed() {
+        return true;
     }
 }

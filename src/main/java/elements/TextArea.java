@@ -1,6 +1,9 @@
 package elements;
 
-public class TextArea extends TextComponent {
+import interfaces.ISelectable;
+import interfaces.IVisible;
+
+public class TextArea extends TextComponent{
     private Button submitButton;
     protected int length;
     protected int height;
