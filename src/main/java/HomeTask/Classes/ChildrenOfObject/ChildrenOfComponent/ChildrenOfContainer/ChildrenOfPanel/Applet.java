@@ -15,9 +15,9 @@ public class Applet extends Panel implements Ifocusable, Ivisible {
 
             inFocus = !inFocus;
             if (inFocus)
-                System.out.println(name + " start to do some action");
+                System.out.println("'" + name + "' start to do some action");
             else System.out.println(name + " stop to do some action");
 
-        } else System.out.println("The " + name + " isn't visible!!");
+        } else System.out.println("The '" + name + "' isn't visible!!");
     }
 }

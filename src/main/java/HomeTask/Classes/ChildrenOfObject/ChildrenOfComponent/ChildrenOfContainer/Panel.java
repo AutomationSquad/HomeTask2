@@ -15,9 +15,9 @@ public class Panel extends Container implements Ifocusable, Ivisible {
 
             inFocus = !inFocus;
             if (inFocus)
-                System.out.println(name + " is in focus");
-            else System.out.println(name + " isn't in focus");
+                System.out.println("'" + name + "' is in focus");
+            else System.out.println("'" + name + "' isn't in focus");
 
-        } else System.out.println("The " + name + " isn't visible!!");
+        } else System.out.println("The '" + name + "' isn't visible!!");
     }
 }

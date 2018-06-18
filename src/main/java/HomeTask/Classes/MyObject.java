@@ -9,7 +9,7 @@ public abstract class MyObject implements Ivisible {
     public void printName() {
 
         {
-            System.out.println("The name of this " + getClass().getSimpleName().toLowerCase() + " is " + name);
+            System.out.println("The name of this " + getClass().getSimpleName().toLowerCase() + " is '" + name + "'");
         }
     }
 
@@ -17,7 +17,7 @@ public abstract class MyObject implements Ivisible {
     public void changeVisible() {
         visibl = !visibl;
         if (visibl)
-            System.out.println(name + " is shown");
-        else System.out.println(name + " is hide");
+            System.out.println("'" + name + "' is shown");
+        else System.out.println("'" + name + "' is hide");
     }
 }

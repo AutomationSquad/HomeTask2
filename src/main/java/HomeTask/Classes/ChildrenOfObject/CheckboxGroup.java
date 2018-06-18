@@ -17,10 +17,14 @@ public class CheckboxGroup extends MyObject implements Ivisible {
     }
 
     public void printAllElements() {
-        System.out.print("The '" + name + "' checkbox group consist from:");
-        for (CheckBox el : elements) {
-            System.out.print(" " + el.name);
+        if(!elements.isEmpty()) {
+
+            System.out.print("The '" + name + "'" + getClass().getSimpleName().toLowerCase() + " consist from:");
+            for (CheckBox el : elements) {
+                System.out.print(" " + el.name);
+            }
         }
+        else System.out.println("The '" + name + "' doesn't have any elements!!");
     }
 
     public void addElement(CheckBox elem) {

@@ -12,7 +12,7 @@ public class Button extends Component implements Iclicable, Ivisible {
 
     @Override
     public void click() {
-        if (visibl) System.out.println("Click on the " + name);
-        else System.out.println("The " + name + " isn't visible!!");
+        if (visibl) System.out.println("Click on the '" + name + "'");
+        else System.out.println("The '" + name + "' isn't visible!!");
     }
 }

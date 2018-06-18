@@ -27,6 +27,7 @@ public class Main {
         FileDialog filDial = new FileDialog("FILEDIALOG");
 
         chBoxGr.changeVisible();
+        chBoxGr.printAllElements();
         chBoxGr.addElement(new CheckBox("CHECKBOX228"));
         chBoxGr.addElement(new CheckBox("CHECKBOX322"));
         chBoxGr.changeVisible();
@@ -52,6 +53,8 @@ public class Main {
         System.out.println("\n");
 
         txtAr.printName();
+        txtAr.changeVisible();
+        txtAr.focus();
         txtAr.focus();
         txtAr.printText();
 
@@ -59,6 +62,7 @@ public class Main {
 
         txtFld.printName();
         txtFld.changeVisible();
+        txtFld.focus();
         txtFld.focus();
         txtFld.printText();
 

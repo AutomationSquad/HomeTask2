@@ -10,8 +10,8 @@ public class FileDialog extends Dialog implements Ifocusable, Ivisible, Idraggab
 
     public void openFile(String filename){
         if(inFocus & visibl)
-        System.out.println("The " + filename + " is opened!!");
-        else System.out.println("The " + name + " isn't in focus or not visible!!");
+        System.out.println("The " + filename + " file is opened!!");
+        else System.out.println("The '" + name + "' doesn't in focus or isn't visible!!");
 
     }
 

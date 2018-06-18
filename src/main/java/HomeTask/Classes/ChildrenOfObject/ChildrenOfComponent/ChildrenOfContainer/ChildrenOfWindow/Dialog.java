@@ -14,7 +14,7 @@ public class Dialog extends Window implements Ifocusable, Ivisible, Idraggable {
     }
 
     public void setMessage(){
-        System.out.println("Enter the value:");
+        System.out.println("Enter the message:");
         Scanner sc = new Scanner(System.in);
         message = sc.nextLine();
     }
@@ -23,10 +23,10 @@ public class Dialog extends Window implements Ifocusable, Ivisible, Idraggable {
     public void changeVisible() {
         visibl = !visibl;
         if (visibl) {
-            System.out.println(name + " is open");
+            System.out.println("'" + name + "' is open");
             if (message != null) System.out.println("The message is " + message);
             else System.out.println("There isn't any messages!!!");
         }
-        else System.out.println(name + " is closed");
+        else System.out.println("'" + name + "' is closed");
     }
 }

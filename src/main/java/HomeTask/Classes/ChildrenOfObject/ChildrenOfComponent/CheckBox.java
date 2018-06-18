@@ -16,9 +16,9 @@ public class CheckBox extends Component implements Iselectable, Ivisible {
         if (visibl) {
             checked = !checked;
             if (checked)
-                System.out.println(name + " is selected");
-            else System.out.println(name + " is unselected");
-        } else System.out.println("The " + name + " isn't visible!!!");
+                System.out.println("'" + name + "' is selected");
+            else System.out.println("'" + name + "' is unselected");
+        } else System.out.println("The '" + name + "' isn't visible!!!");
     }
 }
 
