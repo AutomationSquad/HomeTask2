@@ -1,10 +1,16 @@
 package elements;
 
-public class Window extends Container {
-    public Window(int width, int height, String text) {
-        super(width, height, text);
-    }
+public abstract class Window extends Container implements IVisible, IDrageble, IClosable{
+
     public void openWindow (Window window) {
         System.out.println("Window is opened");
     }
+
+    @Override
+    public void isClosed() {
+    }
+
+    public abstract void close();
+
+    public abstract void isDisplayed();
 }

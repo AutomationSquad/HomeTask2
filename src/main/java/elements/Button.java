@@ -1,15 +1,23 @@
 package elements;
 
-public class Button extends Component {
+public class Button extends Component implements IClickable, IVisible{
 
     public Button(int width, int height, String text) {
-        super(width, height, text);
+
     }
 
     public void click () {
-
-        System.out.println("button is clickable");
+        System.out.println("button is clicked");
     }
 
 
+    @Override
+    public void isDisplayed() {
+
+    }
+
+    @Override
+    public void getText() {
+
+    }
 }
