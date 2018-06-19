@@ -1,6 +1,8 @@
 package elements;
 
-public class Container extends Component {
+import Interfaces.IVisible;
+
+public class Container extends Component implements IVisible{
 
     private String titleContainer;
 
@@ -19,4 +21,16 @@ public class Container extends Component {
     public void checkContainer() {
         System.out.println("Container tile is " + titleContainer);
     }
+
+    @Override
+
+    public void visible () {
+
+        System.out.println(name + "is visible");
+    }
+
+
 }
+
+
+

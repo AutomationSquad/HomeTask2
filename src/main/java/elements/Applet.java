@@ -1,6 +1,9 @@
 package elements;
 
-public class Applet extends Panel {
+import Interfaces.IClosable;
+import Interfaces.IVisible;
+
+public class Applet extends Panel implements IVisible, IClosable {
 
     private String titleApplet;
 
@@ -18,4 +21,20 @@ public class Applet extends Panel {
 
         System.out.println("Applet1");
     }
+
+    @Override
+
+    public void visible() {
+
+        System.out.println("Applet is visible");
+    }
+
+    @Override
+
+    public void close () {
+
+        System.out.println("Applet is closed");
+    }
+
+
 }

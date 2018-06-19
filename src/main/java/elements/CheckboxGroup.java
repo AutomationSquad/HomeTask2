@@ -1,8 +1,10 @@
 package elements;
 
 
+import Interfaces.ISelectable;
+import Interfaces.IVisible;
 
-public class CheckboxGroup extends Object {
+public class CheckboxGroup implements IVisible, ISelectable {
 
     private boolean checked; //isTrue - checkbox is checked, isFalse - checkbox is unchecked
 
@@ -14,15 +16,18 @@ public class CheckboxGroup extends Object {
     }
 
 
-    boolean isChecked() {
-        return checked;
-    }
+        @Override
 
-    void setChecked(boolean checked) {
-        this.checked = checked;
-    }
+        public void visible () {
 
-    public void displayCheckboxGroup() {
+            System.out.println("The CheckboxGroup is visible");
+
+        }
+
+        @Override
+
+        public void select () {
+
         System.out.println(name + "is selected");
     }
 

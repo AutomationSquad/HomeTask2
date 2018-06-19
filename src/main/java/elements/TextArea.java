@@ -1,6 +1,8 @@
 package elements;
 
-public class TextArea extends TextComponent {
+import Interfaces.IVisible;
+
+public class TextArea extends TextComponent implements IVisible {
 
     private int length;
 
@@ -14,8 +16,8 @@ public class TextArea extends TextComponent {
     }
 
     @Override
-    void displayTextComponent() {
-        System.out.println("Text Area");
+    public void visible() {
+        System.out.println("Text Area is visible");
     }
 
 }

@@ -1,17 +1,47 @@
 package elements;
 
-public class Component extends Object {
+import Interfaces.IClickable;
+import Interfaces.IClosable;
+import Interfaces.ISelectable;
+import Interfaces.IVisible;
 
-       public String name;
+public class Component implements IVisible, ISelectable, IClickable, IClosable {
 
-        Component() {
+    public String name;
 
-            this.name = "not selected";
-        }
+    Component() {
+
+        this.name = "not selected";
+    }
+
+    @Override
+
+    public void select() {
+
+        System.out.println(name + "is selected");
+    }
+
+    @Override
+
+    public void visible () {
+
+        System.out.println(name + "is visible");
+    }
 
 
-        public void selected () {
+    @Override
 
-            System.out.println(name + "is selected");
-        }
+    public void click () {
+
+        System.out.println(name + "is clicked");
+    }
+
+    @Override
+
+    public void close () {
+
+        System.out.println(name + "is closed");
+    }
+
+
 }

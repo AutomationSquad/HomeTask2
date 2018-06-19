@@ -1,6 +1,9 @@
 package elements;
 
-public class FileDialog extends Dialog{
+import Interfaces.IClosable;
+import Interfaces.IScrollable;
+
+public class FileDialog extends Dialog implements IClosable, IScrollable {
 
     private Button b;
 
@@ -13,7 +16,17 @@ public class FileDialog extends Dialog{
         this.b = b;
     }
 
-    void clickButton() {
+    @Override
+
+    public void close() {
         System.out.println(b);
     }
+
+    @Override
+
+    public void scroll () {
+        System.out.println(b);
+    }
+
+
 }

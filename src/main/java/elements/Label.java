@@ -1,6 +1,9 @@
 package elements;
 
-public class Label extends Component {
+import Interfaces.IClickable;
+import Interfaces.IVisible;
+
+public class Label extends Component implements IVisible, IClickable {
 
     private String textLabel;
 
@@ -13,8 +16,18 @@ public class Label extends Component {
         this.textLabel = textLabel;
     }
 
+    @Override
 
-    public void checkLabel() {
-        System.out.println("Text label is " + textLabel);
+    public void visible() {
+        System.out.println("Text label" + textLabel + "is visible");
     }
+
+
+    @Override
+
+    public void click() {
+        System.out.println("Text label" + textLabel + "is closed");
+    }
+
+
 }

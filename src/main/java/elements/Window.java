@@ -1,6 +1,11 @@
 package elements;
 
-public class Window extends Container {
+import Interfaces.IClickable;
+import Interfaces.IClosable;
+import Interfaces.IDragable;
+import Interfaces.IScrollable;
+
+public class Window extends Container implements IClickable, IClosable, IScrollable, IDragable {
 
     private String button;
 
@@ -12,9 +17,33 @@ public class Window extends Container {
         this.button = button;
     }
 
-    void clickButton() {
+    @Override
+    public void click() {
         System.out.println("Click on the button" + button);
     }
+
+    @Override
+
+    public void close() {
+        System.out.println("Close button");
+    }
+
+    @Override
+
+    public void scroll() {
+
+        System.out.println("Scroll window");
+
+    }
+
+    @Override
+
+    public void drag() {
+
+        System.out.println("Drag the window");
+    }
+
+
 
 
 

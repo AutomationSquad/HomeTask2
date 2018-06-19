@@ -1,23 +1,24 @@
 package elements;
 
-public class Button extends Component {
+import Interfaces.IClickable;
+import Interfaces.IClosable;
+import Interfaces.ISelectable;
+import Interfaces.IVisible;
 
-            private String titleButton;
-            private String color;
-            private Boolean enable;
+public class Button extends Component implements IClickable, ISelectable, IVisible {
 
-
-            public Button (String s, String c, Boolean b) {
-                this.setTitle(s);
-                this.setColor(c);
-                this.setEnable(b);
-            }
+    private String titleButton;
+    private String color;
+    private Boolean enable;
 
 
-      public void click() {
+    public Button (String s, String c, Boolean b) {
+        this.setTitle(s);
+        this.setColor(c);
+        this.setEnable(b);
+    }
 
-          System.out.println("Click on the" + getTitle());
-      }
+
 
     public String getTitle() {
         return titleButton;
@@ -42,4 +43,26 @@ public class Button extends Component {
     public void setEnable(Boolean enable) {
         this.enable = enable;
     }
+
+    @Override
+
+    public void click() {
+
+        System.out.println("The button is clicked");
+    }
+
+    @Override
+
+    public void visible() {
+
+        System.out.println("The button is visible");
+    }
+
+    @Override
+
+    public void select() {
+
+        System.out.println("The button is selected");
+    }
+
 }

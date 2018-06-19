@@ -1,6 +1,10 @@
 package elements;
 
-public class Checkbox extends Component {
+import Interfaces.IClickable;
+import Interfaces.ISelectable;
+import Interfaces.IVisible;
+
+public class Checkbox extends Component  implements ISelectable, IClickable, IVisible{
 
     private boolean b = true;
 
@@ -17,10 +21,27 @@ public class Checkbox extends Component {
         this.b = false;
     }
 
-     void displayCheckbox() {
+    void displayCheckbox() {
 
-         System.out.println("Checkbox has " + b);
-     }
+        System.out.println("Checkbox has " + b);
+    }
+
+    @Override
+
+    public void select() {
+        System.out.println("The checkbox is selected");
+    }
+
+    @Override
+
+    public void click() {
+        System.out.println("The checkbox is clicked");
+    }
+
+    @Override
+
+    public void visible() {
+        System.out.println("The checkbox is visible");
+    }
 
 }
-
