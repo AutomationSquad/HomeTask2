@@ -1,6 +1,6 @@
 package elements;
 
-public class TextArea extends TextComponent {
+public class TextArea extends TextComponent implements IClickable, IEditable{
     boolean isDisabled;
     CheckboxGroup checkboxGroup;
 
@@ -21,5 +21,19 @@ public class TextArea extends TextComponent {
         System.out.println("Add text to text area and change the state of checkbox");
     }
 
+    @Override
+    public void click() {
+        System.out.println("Iclickable method is overriden in TextArea class");
+    }
 
+    @Override
+    public boolean isEditable() {
+        System.out.println("isEditable method is overriden in TextArea class");
+        return false;
+    }
+
+    @Override
+    public void edit() {
+        System.out.println("edit method is overriden in TextArea class");
+    }
 }

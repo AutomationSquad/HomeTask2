@@ -2,13 +2,12 @@ package elements;
 
 public class Main {
     public static void main(String[] args) {
-        Dialog dialog = new Dialog("dialog", "element", true);
-        dialog.getElementName();
-        dialog.someAction();
+        TextArea textArea = new TextArea("textArea", 12, false, "etext", false);
+        textArea.click();
+        textArea.edit();
 
-        TextComponent textComponent = new TextComponent("textComponent", 12, false, "TEXT");
-        textComponent.addText(textComponent.getText() + " new text");
-        textComponent.getText();
-        textComponent.removeText();
+        Dialog newDialog = new Dialog("Dialog", "element", false);
+        newDialog.scrollBottom();
+        newDialog.isDisplayed();
     }
 }
