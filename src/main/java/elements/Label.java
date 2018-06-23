@@ -10,14 +10,14 @@ public class Label extends Component implements IClickable, IMovable, IVisible {
     }
 
     public void click() {
-        System.out.println(this.title + " is clicked");
+        System.out.println(title + " is clicked");
     }
 
     public void move(int distance) {
-        System.out.println(this.title + " was moved on " + distance);
+        System.out.println(title + " was moved on " + distance);
     }
 
     public void visible() {
-        System.out.println(this.title + " is visible");
+        System.out.println(title + " is visible");
     }
 }

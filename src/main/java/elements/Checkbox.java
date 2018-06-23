@@ -9,6 +9,6 @@ public class Checkbox extends Component implements IVisible {
     }
 
     public void visible() {
-        System.out.println(this.title + " is visible");
+        System.out.println(title + " is visible");
     }
 }

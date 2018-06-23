@@ -16,6 +16,9 @@ public class Applet extends Panel {
     }
 
     public void printPage() {
-        System.out.println(this.title + "\n" + this.welcome.title + "\n" + this.aboutUs.text + "\n" + this.close.title);
+        System.out.println(title + "\n" +
+                welcome.title + "\n" +
+                aboutUs.text + "\n" +
+                close.title);
     }
 }

@@ -20,14 +20,14 @@ public class Button extends Component implements IClickable, IMovable {
     }
 
     public void click() {
-        System.out.println(this.title + " is clicked");
+        System.out.println(title + " is clicked");
     }
 
     public void move(int distance) {
-        System.out.println(this.title + " is moved on " + distance);
+        System.out.println(title + " is moved on " + distance);
     }
 
     public void hide() {
-        System.out.println(this.title + " is hidden");
+        System.out.println(title + " is hidden");
     }
 }

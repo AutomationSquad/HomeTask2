@@ -10,6 +10,6 @@ public class CheckboxGroup implements IClickable {
     }
 
     public void click() {
-        System.out.println(this.title + " is clicked.");
+        System.out.println(title + " is clicked.");
     }
 }

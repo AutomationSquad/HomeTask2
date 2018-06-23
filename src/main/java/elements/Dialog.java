@@ -16,10 +16,10 @@ public class Dialog extends Window {
     }
 
     public void printPage() {
-        System.out.println(this.dialogTitle +
-                "\n" + this.text.text +
-                "\n" + this.callBack.title +
-                "\n" + this.submit.title +
-                "\n" + this.close.title);
+        System.out.println(dialogTitle + "\n" +
+                text.text + "\n" +
+                callBack.title + "\n" +
+                submit.title + "\n" +
+                close.title);
     }
 }

@@ -15,15 +15,15 @@ public class Window extends Container implements IClosable, IScrollable, ISelect
     }
 
     public void hide(int secondsForAction) {
-        System.out.println(this.title + "is hidden in " + secondsForAction + " seconds.");
+        System.out.println(title + "is hidden in " + secondsForAction + " seconds.");
     }
 
     public void scroll(boolean direction) {
         direction = true;
         if (true) {
-            System.out.println(this.title + " is scrolled up");
+            System.out.println(title + " is scrolled up");
         } else {
-            System.out.println(this.title + " is scrolled down");
+            System.out.println(title + " is scrolled down");
         }
     }
 
@@ -33,6 +33,6 @@ public class Window extends Container implements IClosable, IScrollable, ISelect
 
     @Override
     public void close() {
-        System.out.println(this.title + "is closed");
+        System.out.println(title + "is closed");
     }
 }

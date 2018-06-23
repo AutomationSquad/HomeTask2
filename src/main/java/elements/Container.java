@@ -11,10 +11,10 @@ public class Container extends Component implements IMovable {
     }
 
     public void rotate() {
-        System.out.println(this.title + " is rotated");
+        System.out.println(title + " is rotated");
     }
 
     public void move(int distance) {
-        System.out.println(this.title + " moved on " + distance);
+        System.out.println(title + " moved on " + distance);
     }
 }
