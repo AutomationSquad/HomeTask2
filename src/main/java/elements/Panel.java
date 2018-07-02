@@ -1,6 +1,8 @@
 package elements;
 
-public class Panel extends Container {
+import interfaces.IScrollable;
+
+public class Panel extends Container implements IScrollable {
 
     public int margin;
 
@@ -8,6 +10,10 @@ public class Panel extends Container {
         super(name);
         this.margin = margin;
 
+    }
+
+    public void scroll(){
+        System.out.print("scroll");
     }
 
     public void printName(){
